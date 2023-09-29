@@ -1,0 +1,58 @@
+@import '../../styles/variables';
+
+.left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50% 50%;
+  grid-gap: 2rem;
+  @media only screen and (max-width: $bp-mobile) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__image {
+    grid-column: 1 / -1;
+    grid-row: 1 / 1;
+
+    img {
+      height: 100%;
+      width: 100%;
+      background-position: center;
+      object-fit: cover;
+      // opacity: 0.7;
+    }
+  }
+
+  &__title {
+    color: $color-neutral-blue-darker;
+    font-weight: $font-weight-bolder;
+    font-size: 3rem;
+    margin: 0;
+  }
+  &__introduction {
+  }
+}
+
+.btn {
+  cursor: pointer;
+  background-color: $color-primary-red;
+  color: $color-neutral-white;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  padding: 0.4rem 1rem;
+  transition: all 0.2s;
+  margin: 1rem;
+  margin-left: 0;
+  align-self: start;
+  font-weight: $font-weight-bold;
+
+  &:active,
+  &:hover {
+    background-color: $color-neutral-blue-darker;
+  }
+}
+
+.text {
+}

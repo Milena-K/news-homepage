@@ -1,0 +1,23 @@
+$color-primary-orange: #e9ab53;
+$color-primary-red: #f15e50;
+
+$color-neutral-white: #fffdfa;
+$color-neutral-blue-light: #c5c6ce;
+$color-neutral-blue-dark: #5d5f79;
+$color-neutral-blue-darker: #00001a;
+
+$font-primary: 'Open Sans', sans-serif;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-bolder: 800;
+
+// break points
+$bp-mobile: 375px;
+$bp-desktop: 1440px;
+
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  src:
+    local('Inter'),
+    url(../fonts/Inter-VariableFont_slnt,wght.ttf) format('truetype');
+}

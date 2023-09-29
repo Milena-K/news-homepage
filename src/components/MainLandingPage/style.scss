@@ -1,0 +1,22 @@
+@import '../../styles/App.scss';
+
+.main {
+  display: grid;
+  grid-template-columns: 33.333% 33.333% 1fr;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+
+  @media only screen and (max-width: $bp-mobile) {
+    grid-template-columns: 100%;
+    grid-row-gap: 1rem;
+  }
+
+  &__left {
+    grid-column: 1 / span 2;
+    @media only screen and (max-width: $bp-mobile) {
+      grid-column: 1 / 1;
+    }
+  }
+  &__right {
+  }
+}

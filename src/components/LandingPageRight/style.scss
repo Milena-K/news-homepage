@@ -1,0 +1,36 @@
+@import '../../styles/variables';
+
+.right {
+  background-color: $color-neutral-blue-darker;
+  height: 100%;
+  padding: 2rem;
+  &__title {
+    color: $color-primary-orange;
+  }
+  .news {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    &__item {
+      padding-top: 2rem;
+      &:not(:first-child) {
+        border-top: 1px solid $color-neutral-blue-light;
+      }
+    }
+    &__title {
+      color: $color-neutral-white;
+      transition: color 0.2s;
+      cursor: pointer;
+      &:hover {
+        color: $color-primary-orange;
+      }
+    }
+    &__text {
+      padding-top: 1rem;
+      color: $color-neutral-blue-light;
+    }
+  }
+}
